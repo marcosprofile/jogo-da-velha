@@ -1,0 +1,144 @@
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+/* botões */
+
+#buttons-container button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    color: #FFF;
+}
+
+#two-players {
+    background-color: #00DB61;
+}
+
+#ai-player {
+    background-color: #FF3848;
+}
+
+#two-players:hover {
+    cursor: pointer;
+    background-color: #00B763;
+    transition: all 0.2s ease;
+}
+
+#ai-player:hover {
+    cursor: pointer;
+    background-color: #DB2847;
+    transition: all 0.2s ease;
+}
+
+/* jogo */
+
+#container {
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+}
+
+.box {
+    height: 100px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#block-1, #block-2, #block-3 {
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7 {
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9 {
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9 {
+    border-right: none;
+}
+
+/* símbolos */
+
+.x {
+    font-size: 65px;
+    color: #FF0000;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #00FF00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+/* classe de esconder */
+
+.hide {
+    display: none !important;
+}
+
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.score-box {
+    margin: 0 20px;
+}
+
+#x-scoreboard {
+    color: #FF0000;
+    margin-right: 3px;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    color: #00FF00;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+/* msg de vitótia */
+
+#message p {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+}
