@@ -95,7 +95,6 @@ function checkEl(player1, player2) {
 
 function checkWinCondition() {
 
-
     let b1 = document.getElementById("block-1")
     let b2 = document.getElementById("block-2")
     let b3 = document.getElementById("block-3")
@@ -247,10 +246,9 @@ function checkWinCondition() {
     for(let i = 0; i < boxes.length; i++) {
 
         if(boxes[i].childNodes[0] != undefined) {
-            
             counter++
-
         }
+        
     }
 
     if(counter == 9) {
@@ -307,7 +305,7 @@ function declareWinner(winner) {
 
 }
 
-// executar a lógica da jogada do CPU
+// executar a lógica da jogada do player IA
 
 function computerPlay() {
 
